@@ -1,20 +1,33 @@
-@*
- * This template takes a single argument, a String containing a
- * message to display.
- *@
-@(message: String)
 
-@*
- * Call the `main` template with two arguments. The first
- * argument is a `String` with the title of the page, the second
- * argument is an `Html` object containing the body of the page.
- *@
-@main("Welcome to Play") {
+@(title: String)
+<!DOCTYPE html>
+<html lang="en" ng-app="SIRIUS">
+    <head>
+        <title>@title</title>
 
-    @*
-     * Get an `Html` object by calling the built-in Play welcome
-     * template and passing a `String` message.
-     *@
-    @play20.welcome(message, style = "Java")
+            <!------------------------------------------ Stylesheets ------------------------------------------>
+        <link rel="stylesheet" type="text/css" href="/assets/bootstrap/bootstrap.min.css"/>
+            <!------------------------------------------ Stylesheets ------------------------------------------>
 
-}
+
+            <!------------------------------------------ Javascript ------------------------------------------>
+        <script type="text/javascript" src="/assets/angularjs/angular.min.js"></script>
+
+        <script type="text/javascript" src="/js/app.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="/assets/bootstrap/bootstrap.min.js"></script>
+            <!------------------------------------------ Javascript ------------------------------------------>
+
+    </head>
+
+    <body>
+        <div
+        ng-include="'/html/common/headbar.html'">
+        </div>
+
+    </body>
+</html>
