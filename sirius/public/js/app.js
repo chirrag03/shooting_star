@@ -1,6 +1,6 @@
 "use strict"
 
-var requires = [];
+var requires = ["ui.router"];
 
 var SIRIUS = angular.module('SIRIUS', requires);
 
