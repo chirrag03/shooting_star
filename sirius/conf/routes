@@ -12,6 +12,7 @@ GET     /message                    controllers.AsyncController.message
 # Map static resources from the /public folder to the /assets URL path
 GET     /html/*file                 controllers.Assets.versioned(path="/public/html", file: Asset)
 GET     /assets/*file               controllers.Assets.versioned(path="/public/assets", file: Asset)
+GET     /bower_components/*file     controllers.Assets.versioned(path="/public/bower_components", file: Asset)
 GET     /js/*file                   controllers.Assets.versioned(path="/public/js", file: Asset)
 GET     /css/*file                  controllers.Assets.versioned(path="/public/css", file: Asset)
 GET     /img/*file                  controllers.Assets.versioned(path="/public/img", file: Asset)
