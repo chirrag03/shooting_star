@@ -2,7 +2,7 @@
 
 SIRIUS.config(['$stateProvider', '$urlRouterProvider',
     function ($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise('/profile-page');
+        // $urlRouterProvider.otherwise('/profile-page');
         $stateProvider
             .state('profile-page', {
                 url: '/profile-page',

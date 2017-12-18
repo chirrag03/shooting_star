@@ -1,0 +1,14 @@
+.custom-album{
+    width: 1200px;
+    /*margin: 0 auto;*/
+    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+    margin-left: -65px;
+    margin-top: 50px;
+}
+* {
+    box-sizing: content-box;
+}
+*:before,
+*:after {
+    box-sizing: content-box;
+}
