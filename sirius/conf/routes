@@ -16,3 +16,10 @@ GET     /bower_components/*file     controllers.Assets.versioned(path="/public/b
 GET     /js/*file                   controllers.Assets.versioned(path="/public/js", file: Asset)
 GET     /css/*file                  controllers.Assets.versioned(path="/public/css", file: Asset)
 GET     /img/*file                  controllers.Assets.versioned(path="/public/img", file: Asset)
+
+# Artworks:
+GET     /api/v1/artworks                    	@controllers.ArtworksController.getAll()
+GET     /api/v1/artworks/$id<[0-9]+>        	@controllers.ArtworksController.get(id:Int)
+POST    /api/v1/artworks                    	@controllers.ArtworksController.create()
+PUT     /api/v1/artworks                        @controllers.ArtworksController.update()
+DELETE  /api/v1/artworks/$id<[0-9]+>        	@controllers.ArtworksController.remove(id:Int)
